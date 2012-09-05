@@ -1,3 +1,6 @@
 [submodule "private/nutshell"]
 	path = private/nutshell
 	url = git@github.com:SpinifexGroup/nutshell.git
+[submodule "private/plugin/cms"]
+	path = private/plugin/cms
+	url = git@github.com:deanrather/nutshell-cms.git
