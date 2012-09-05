@@ -1,0 +1,31 @@
+{
+	"config":
+	{
+		"application":
+		{
+			"mode": "production"
+		},
+		"plugin":
+		{
+			"Db":
+			{
+				"connections":
+				{
+					"sudocode":
+					{
+						"handler":		"mysql",
+						"username":		"sudocode",
+						"password":		"sudocode",
+						"host":			"localhost",
+						"port":			"3306",
+						"database":		"sudocode"
+					}
+				}
+			},
+			"Mvc":
+			{
+				"connection": "sudocode"
+			}
+		}
+	}
+}

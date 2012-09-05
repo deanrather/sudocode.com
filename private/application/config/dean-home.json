@@ -1,0 +1,10 @@
+{
+	"extends": "default",
+	"config":
+	{
+		"application":
+		{
+			"mode": "development"
+		}
+	}
+}
