@@ -3,13 +3,13 @@ namespace application\controller
 {
 	use nutshell\plugin\mvc\Controller;
 	
-	class Index extends Controller
+	class Contact extends Controller
 	{
 		public function index()
 		{
 			$this->view->setTemplate('layout');
-			$this->view->setVar('pageTitle','Sudocode');
-			$this->view->setVar('pageView','home');
+			$this->view->setVar('pageTitle','Sudocode -- Contact');
+			$this->view->setVar('pageView','contact');
 			$this->view->render();
 		}
 	}
