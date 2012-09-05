@@ -7,8 +7,9 @@ namespace application\controller
 	{
 		public function index()
 		{
-			$this->view->setTemplate('index');
-			$this->view->setVar('text','Hello World');
+			$this->view->setTemplate('layout');
+			$this->view->setVar('pageTitle','Sudocode.com');
+			$this->view->setVar('pageView','home');
 			$this->view->render();
 		}
 	}
