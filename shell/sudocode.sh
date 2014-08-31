@@ -56,28 +56,28 @@ g="\e[1;32m  "
 # banner+="$b+---------------------------------------------------------------------------+\n"
 
 user="$(git config --global user.name)"
-fortune="$(fortune -n 75)"
 
 banner="\n"
 banner+="$b+---------------------------------------------------------------------------+\n"
 banner+="$b|                                                                           |\n"
 banner+="$b|$g                         __                     __                     $b|\n"
 banner+="$b|$g           ___        __/ / ___   ___  ___   __/ / ___                 $b|\n"
-banner+="$b|$g          (__, / / / / _ / / _ \ /    / _ \ / _ / / __                 $b|\n"
+banner+="$b|$g          (__, / / / / _ / / _ \ /    / _ \ / _ / / __\                $b|\n"
 banner+="$b|$g          ___/ \__/  \__/  \___/ \___ \___/ \__/  \___                 $b|\n"
 banner+="$b|$g                                                                       $b|\n"
 banner+="$b|                                                                           |\n"
 banner+="$b+---------------------------------------------------------------------------+\n"
-banner+="$w                                                                             \n"
-banner+="$w   Welcome, $user                                                            \n"
-banner+="$w   $fortune                                                                  \n"
-banner+="$w                                                                             \n"
+echo -e "$banner"
+echo -e "$w    Welcome, $user"
+fortune -s | fold -w 70 -s | sed  's/^/      /'
+echo 
 
-echo -en "$banner"
-
+unset b g w user banner
 
 # TODO
 
 	# Check fortune is installed
 	# Check git is installed
-	# 
+	# Only display banner if wide-enough
+	# word-wrap the fortune
+	# display uptime and other stuffs?
